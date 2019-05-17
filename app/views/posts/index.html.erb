@@ -1,3 +1,18 @@
+<html><body><body onload="randombg()">
+<div id="random" >
+<div id="content">
+
+<div id="title"> Blog Posts </div>
+
 <% @posts.each do |post| %>
-  <div><%= post.title %></div>
+  <p><b> <div id="posts">  <%=link_to post.title, "/posts/#{post.id}" %>  </div>  </b></p>
 <% end %>
+
+<center><button onclick="randombg()">Reload Background</button></center>
+
+
+</div>
+</div>
+</body>
+</body>
+</html>

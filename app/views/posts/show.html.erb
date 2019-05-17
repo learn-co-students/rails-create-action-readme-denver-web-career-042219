@@ -1,2 +1,22 @@
-<h1><%= @post.title %></h1>
+
+<body onload="randombg()">
+<div id="random" >
+
+
+
+  <div id="content">
+  <div id="title">
+    <h1><%= @post.title %></h1>
+  </div>
+
+<div id="blogtext">
 <p><%= @post.description %></p>
+</div>
+
+<div id="footertext">
+<%=link_to "Go Back", "/posts/" %>
+</div>
+
+</div>
+</div>
+</body>
